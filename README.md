@@ -37,7 +37,7 @@ if ENV['PSEUDOLOC']
 end
 ```
 
-And then restart the Rails application.
+Set the environment variable to turn on pseudoloc and then restart the Rails application. To turn it off, simply clear the environment variable and restart the Rails application.
 
 ## Limitations
 
