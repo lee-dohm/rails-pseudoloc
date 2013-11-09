@@ -3,4 +3,5 @@
 #
 
 require 'rails/pseudoloc/backend'
+require 'rails/pseudoloc/codec'
 require 'rails/pseudoloc/version'
