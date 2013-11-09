@@ -18,7 +18,9 @@ module Rails
 
       # Pseudolocalizes the translation returned from the actual backend.
       def translate(locale, key, options = {})
-        @codec.encode(__getobj__.translate(locale, key, options))
+        value = __getobj__.translate(locale, key, options)
+
+        value.is_a?(String) ? @codec.encode(value) : value
       end
     end
   end
